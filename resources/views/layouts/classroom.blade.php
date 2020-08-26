@@ -67,7 +67,7 @@
             <div class="content bg-light py-5">
                 <div class="container-fluid py-3 px-4">
                     <div class="grid-container">
-                        <div class="grid-item">left</div>
+                        <div class="grid-item">left <div id="textshow"></div></div>
                         <div class="grid-item">center</div>
                         <div class="grid-item">right</div>
                     </div>
