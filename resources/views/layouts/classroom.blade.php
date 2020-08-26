@@ -46,7 +46,7 @@
         <!-- Main Container -->
         <div id="MainContainer" class="main-container isOpen">
             <!-- Top Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+            <nav class="navbar navbar-expand navbar-light bg-light shadow-sm fixed-top">
                 <div class="container-fluid">
                     <div id="ToggleBar" class="navbar-header">
                             <div class="menu-bars">

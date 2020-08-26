@@ -287,6 +287,25 @@ h6 {
   color: #074549;
 }
 
+@media (max-width: 780px) {
+  .sidebar {
+    transform: translate3d(-270px, 0, 0) !important;
+  }
+  .sidebar.isClose {
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  .main-container {
+    transform: translate3d(270px, 0, 0) !important;
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+  .main-container.isOpen {
+    margin-left: 0px !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+}
 .sidebar {
   background-color: #ffffff;
   position: fixed;
@@ -373,7 +392,6 @@ h6 {
 @media (max-width: 780px) {
   .main-container.isOpen {
     margin-left: 0;
-    transform: translate3d(275px, 0, 0) !important;
   }
 }
 .main-container.isOpen nav {

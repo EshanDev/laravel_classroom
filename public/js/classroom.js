@@ -16,7 +16,18 @@ window.onload = function() {
         // document.getElementById("textshow").innerHTML =
         //     "Width: " + w + "<br>Height: " + h;
 
-        if
+    //     if(window.innerWidth < 768){
+    //     sidebar.classList.add('isClose')
+    //     wrapper.classList.remove('isOpen')
+    //     container.classList.remove('isOpen')
+    // }
     });
+
+
+    // if(window.innerWidth < 768){
+    //     sidebar.classList.add('isClose')
+    //     wrapper.classList.remove('isOpen')
+    //     container.classList.remove('isOpen')
+    // }
 };
 

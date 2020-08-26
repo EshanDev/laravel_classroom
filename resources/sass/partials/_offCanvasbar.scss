@@ -1,0 +1,22 @@
+@import "../mixins/mediaQuery";
+
+@include breakpoint(780px, max){
+	.sidebar{
+		transform: translate3d(-270px, 0, 0) !important;
+		&.isClose{
+			transform: translate3d(0, 0, 0) !important;
+		}
+	}
+	.main-container{
+		transform: translate3d(270px, 0, 0) !important;
+		&.isOpen{
+			margin-left: 0px !important;
+			transform: translate3d(0, 0, 0) !important;
+
+		}
+		position: fixed;
+        left: 0;
+        right: 0;
+
+	}
+}
