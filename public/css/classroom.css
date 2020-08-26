@@ -365,10 +365,25 @@ h6 {
 }
 .main-container.isOpen {
   margin-left: 275px;
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+  width: 100%;
+}
+@media (max-width: 780px) {
+  .main-container.isOpen {
+    margin-left: 0;
+    transform: translate3d(275px, 0, 0) !important;
+  }
 }
 .main-container.isOpen nav {
+  margin-left: 0;
   transition: all 0.4s ease;
-  margin-left: 275px;
+  transform: translate3d(0 0, 0);
+}
+@media (max-width: 780px) {
+  .main-container.isOpen nav {
+    transform: translate3d(0, 0, 0) !important;
+  }
 }
 .main-container .content {
   flex: 1;

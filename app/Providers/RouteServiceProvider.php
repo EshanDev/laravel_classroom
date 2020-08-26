@@ -15,6 +15,7 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     protected $namespace = 'App\Http\Controllers';
+    protected $classroom = 'App\http\Controllers\Classroom\Controller';
 
     /**
      * The path to the "home" route for your application.
@@ -22,6 +23,7 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     public const HOME = '/home';
+    public const CLASSROOM = '/classroom';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -47,6 +49,8 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapWebRoutes();
 
         //
+
+        $this->mapClassroomRoutes();
     }
 
     /**
@@ -76,5 +80,15 @@ class RouteServiceProvider extends ServiceProvider
             ->middleware('api')
             ->namespace($this->namespace)
             ->group(base_path('routes/api.php'));
+    }
+
+
+
+
+    protected function mapClassroomRoutes(){
+        Route::prefix('classroom')
+            ->middleware('web')
+            ->namespace($this->classroom)
+            ->group(base_path('routes/classroom.php'));
     }
 }

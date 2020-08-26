@@ -8,10 +8,22 @@
     }
     &.isOpen{
         margin-left: 275px;
-        nav{
-            transition: all .4s ease;
-            margin-left: 275px;
+        transform: translate3d(0, 0, 0);
+
+        @media (max-width: 780px){
+            margin-left: 0;
+            transform: translate3d(275px, 0, 0) !important;
         }
+        nav{
+            margin-left: 0;
+            transition: all .4s ease;
+            transform: translate3d(0 0, 0);
+            @media (max-width: 780px){
+                transform: translate3d(0, 0, 0) !important;
+            }
+        }
+        position: fixed;
+        width: 100%;
     }
     .content{
         flex: 1;
