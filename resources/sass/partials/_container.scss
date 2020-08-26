@@ -1,0 +1,22 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+
+    transition: all .4s ease;
+    nav{
+        transition: all .4s ease;
+    }
+    &.isOpen{
+        margin-left: 275px;
+        nav{
+            transition: all .4s ease;
+            margin-left: 275px;
+        }
+    }
+    .content{
+        flex: 1;
+        display: flex;
+        min-height: 100vh;
+    }
+
+}

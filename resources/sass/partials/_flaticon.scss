@@ -1,0 +1,289 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Flaticon.woff2") format("woff2"),
+    url("../fonts/Flaticon.woff") format("woff"),
+    url("../fonts/Flaticon.ttf") format("truetype"),
+    url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.fimanager:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.flaticon-001-workplace:before {
+  content: "\f100";
+}
+
+.flaticon-002-server:before {
+  content: "\f101";
+}
+
+.flaticon-003-work-from-home:before {
+  content: "\f102";
+}
+
+.flaticon-004-network:before {
+  content: "\f103";
+}
+
+.flaticon-005-email:before {
+  content: "\f104";
+}
+
+.flaticon-006-wifi-router:before {
+  content: "\f105";
+}
+
+.flaticon-007-cpu-tower:before {
+  content: "\f106";
+}
+
+.flaticon-008-cloud:before {
+  content: "\f107";
+}
+
+.flaticon-009-meeting:before {
+  content: "\f108";
+}
+
+.flaticon-010-money:before {
+  content: "\f109";
+}
+
+.flaticon-011-workflow:before {
+  content: "\f10a";
+}
+
+.flaticon-012-webcam:before {
+  content: "\f10b";
+}
+
+.flaticon-013-working-at-home:before {
+  content: "\f10c";
+}
+
+.flaticon-014-desk-lamp:before {
+  content: "\f10d";
+}
+
+.flaticon-015-online-meeting:before {
+  content: "\f10e";
+}
+
+.flaticon-016-tablet:before {
+  content: "\f10f";
+}
+
+.flaticon-017-businesswoman:before {
+  content: "\f110";
+}
+
+.flaticon-018-monitor:before {
+  content: "\f111";
+}
+
+.flaticon-019-file-sharing:before {
+  content: "\f112";
+}
+
+.flaticon-020-couch:before {
+  content: "\f113";
+}
+
+.flaticon-021-file-folder:before {
+  content: "\f114";
+}
+
+.flaticon-022-printer:before {
+  content: "\f115";
+}
+
+.flaticon-023-work-from-home:before {
+  content: "\f116";
+}
+
+.flaticon-024-file-sharing:before {
+  content: "\f117";
+}
+
+.flaticon-025-conference:before {
+  content: "\f118";
+}
+
+.flaticon-026-online-meeting:before {
+  content: "\f119";
+}
+
+.flaticon-027-file-sharing:before {
+  content: "\f11a";
+}
+
+.flaticon-028-to-do-list:before {
+  content: "\f11b";
+}
+
+.flaticon-029-file-sharing:before {
+  content: "\f11c";
+}
+
+.flaticon-030-do-not-disturb-sign:before {
+  content: "\f11d";
+}
+
+.flaticon-031-work-from-home:before {
+  content: "\f11e";
+}
+
+.flaticon-032-world:before {
+  content: "\f11f";
+}
+
+.flaticon-033-speaker:before {
+  content: "\f120";
+}
+
+.flaticon-034-fax-machine:before {
+  content: "\f121";
+}
+
+.flaticon-035-online-meeting:before {
+  content: "\f122";
+}
+
+.flaticon-036-businessman:before {
+  content: "\f123";
+}
+
+.flaticon-037-monitor:before {
+  content: "\f124";
+}
+
+.flaticon-038-wifi:before {
+  content: "\f125";
+}
+
+.flaticon-039-hot-coffee:before {
+  content: "\f126";
+}
+
+.flaticon-040-teleworking:before {
+  content: "\f127";
+}
+
+.flaticon-041-online-contract:before {
+  content: "\f128";
+}
+
+.flaticon-042-stationery:before {
+  content: "\f129";
+}
+
+.flaticon-043-email:before {
+  content: "\f12a";
+}
+
+.flaticon-044-development:before {
+  content: "\f12b";
+}
+
+.flaticon-045-chat:before {
+  content: "\f12c";
+}
+
+.flaticon-046-sticky-notes:before {
+  content: "\f12d";
+}
+
+.flaticon-047-voice-message:before {
+  content: "\f12e";
+}
+
+.flaticon-048-working-hours:before {
+  content: "\f12f";
+}
+
+.flaticon-049-network:before {
+  content: "\f130";
+}
+
+.flaticon-050-notes:before {
+  content: "\f131";
+}
+
+$font-Flaticon-001-workplace: "\f100";
+$font-Flaticon-002-server: "\f101";
+$font-Flaticon-003-work-from-home: "\f102";
+$font-Flaticon-004-network: "\f103";
+$font-Flaticon-005-email: "\f104";
+$font-Flaticon-006-wifi-router: "\f105";
+$font-Flaticon-007-cpu-tower: "\f106";
+$font-Flaticon-008-cloud: "\f107";
+$font-Flaticon-009-meeting: "\f108";
+$font-Flaticon-010-money: "\f109";
+$font-Flaticon-011-workflow: "\f10a";
+$font-Flaticon-012-webcam: "\f10b";
+$font-Flaticon-013-working-at-home: "\f10c";
+$font-Flaticon-014-desk-lamp: "\f10d";
+$font-Flaticon-015-online-meeting: "\f10e";
+$font-Flaticon-016-tablet: "\f10f";
+$font-Flaticon-017-businesswoman: "\f110";
+$font-Flaticon-018-monitor: "\f111";
+$font-Flaticon-019-file-sharing: "\f112";
+$font-Flaticon-020-couch: "\f113";
+$font-Flaticon-021-file-folder: "\f114";
+$font-Flaticon-022-printer: "\f115";
+$font-Flaticon-023-work-from-home: "\f116";
+$font-Flaticon-024-file-sharing: "\f117";
+$font-Flaticon-025-conference: "\f118";
+$font-Flaticon-026-online-meeting: "\f119";
+$font-Flaticon-027-file-sharing: "\f11a";
+$font-Flaticon-028-to-do-list: "\f11b";
+$font-Flaticon-029-file-sharing: "\f11c";
+$font-Flaticon-030-do-not-disturb-sign: "\f11d";
+$font-Flaticon-031-work-from-home: "\f11e";
+$font-Flaticon-032-world: "\f11f";
+$font-Flaticon-033-speaker: "\f120";
+$font-Flaticon-034-fax-machine: "\f121";
+$font-Flaticon-035-online-meeting: "\f122";
+$font-Flaticon-036-businessman: "\f123";
+$font-Flaticon-037-monitor: "\f124";
+$font-Flaticon-038-wifi: "\f125";
+$font-Flaticon-039-hot-coffee: "\f126";
+$font-Flaticon-040-teleworking: "\f127";
+$font-Flaticon-041-online-contract: "\f128";
+$font-Flaticon-042-stationery: "\f129";
+$font-Flaticon-043-email: "\f12a";
+$font-Flaticon-044-development: "\f12b";
+$font-Flaticon-045-chat: "\f12c";
+$font-Flaticon-046-sticky-notes: "\f12d";
+$font-Flaticon-047-voice-message: "\f12e";
+$font-Flaticon-048-working-hours: "\f12f";
+$font-Flaticon-049-network: "\f130";
+$font-Flaticon-050-notes: "\f131";
+
+.glyph-icon {
+  font-style: normal !important;
+  font-family: "Flaticon";
+}

@@ -1,0 +1,9 @@
+.grid-container{
+    display: grid;
+}
+
+#MainContainer{
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

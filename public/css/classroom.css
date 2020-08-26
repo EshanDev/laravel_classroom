@@ -1,0 +1,385 @@
+@import url(https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;500;600;700;800&display=swap);@charset "UTF-8";
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: var(--prompt);
+  background: #eeeeee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --sidebar-header: #00695C;
+  --sidebar-list: #797D7F;
+  --sidebar-list-hover: #424949;
+}
+
+:root {
+  --prompt: "Prompt", sans-serif;
+}
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/Flaticon.woff2") format("woff2"), url("../fonts/Flaticon.woff") format("woff"), url("../fonts/Flaticon.ttf") format("truetype"), url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+.fimanager:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.flaticon-001-workplace:before {
+  content: "\F100";
+}
+
+.flaticon-002-server:before {
+  content: "\F101";
+}
+
+.flaticon-003-work-from-home:before {
+  content: "\F102";
+}
+
+.flaticon-004-network:before {
+  content: "\F103";
+}
+
+.flaticon-005-email:before {
+  content: "\F104";
+}
+
+.flaticon-006-wifi-router:before {
+  content: "\F105";
+}
+
+.flaticon-007-cpu-tower:before {
+  content: "\F106";
+}
+
+.flaticon-008-cloud:before {
+  content: "\F107";
+}
+
+.flaticon-009-meeting:before {
+  content: "\F108";
+}
+
+.flaticon-010-money:before {
+  content: "\F109";
+}
+
+.flaticon-011-workflow:before {
+  content: "\F10A";
+}
+
+.flaticon-012-webcam:before {
+  content: "\F10B";
+}
+
+.flaticon-013-working-at-home:before {
+  content: "\F10C";
+}
+
+.flaticon-014-desk-lamp:before {
+  content: "\F10D";
+}
+
+.flaticon-015-online-meeting:before {
+  content: "\F10E";
+}
+
+.flaticon-016-tablet:before {
+  content: "\F10F";
+}
+
+.flaticon-017-businesswoman:before {
+  content: "\F110";
+}
+
+.flaticon-018-monitor:before {
+  content: "\F111";
+}
+
+.flaticon-019-file-sharing:before {
+  content: "\F112";
+}
+
+.flaticon-020-couch:before {
+  content: "\F113";
+}
+
+.flaticon-021-file-folder:before {
+  content: "\F114";
+}
+
+.flaticon-022-printer:before {
+  content: "\F115";
+}
+
+.flaticon-023-work-from-home:before {
+  content: "\F116";
+}
+
+.flaticon-024-file-sharing:before {
+  content: "\F117";
+}
+
+.flaticon-025-conference:before {
+  content: "\F118";
+}
+
+.flaticon-026-online-meeting:before {
+  content: "\F119";
+}
+
+.flaticon-027-file-sharing:before {
+  content: "\F11A";
+}
+
+.flaticon-028-to-do-list:before {
+  content: "\F11B";
+}
+
+.flaticon-029-file-sharing:before {
+  content: "\F11C";
+}
+
+.flaticon-030-do-not-disturb-sign:before {
+  content: "\F11D";
+}
+
+.flaticon-031-work-from-home:before {
+  content: "\F11E";
+}
+
+.flaticon-032-world:before {
+  content: "\F11F";
+}
+
+.flaticon-033-speaker:before {
+  content: "\F120";
+}
+
+.flaticon-034-fax-machine:before {
+  content: "\F121";
+}
+
+.flaticon-035-online-meeting:before {
+  content: "\F122";
+}
+
+.flaticon-036-businessman:before {
+  content: "\F123";
+}
+
+.flaticon-037-monitor:before {
+  content: "\F124";
+}
+
+.flaticon-038-wifi:before {
+  content: "\F125";
+}
+
+.flaticon-039-hot-coffee:before {
+  content: "\F126";
+}
+
+.flaticon-040-teleworking:before {
+  content: "\F127";
+}
+
+.flaticon-041-online-contract:before {
+  content: "\F128";
+}
+
+.flaticon-042-stationery:before {
+  content: "\F129";
+}
+
+.flaticon-043-email:before {
+  content: "\F12A";
+}
+
+.flaticon-044-development:before {
+  content: "\F12B";
+}
+
+.flaticon-045-chat:before {
+  content: "\F12C";
+}
+
+.flaticon-046-sticky-notes:before {
+  content: "\F12D";
+}
+
+.flaticon-047-voice-message:before {
+  content: "\F12E";
+}
+
+.flaticon-048-working-hours:before {
+  content: "\F12F";
+}
+
+.flaticon-049-network:before {
+  content: "\F130";
+}
+
+.flaticon-050-notes:before {
+  content: "\F131";
+}
+
+.glyph-icon {
+  font-style: normal !important;
+  font-family: "Flaticon";
+}
+
+.menu-bars {
+  cursor: pointer;
+  margin-right: 8px;
+}
+.menu-bars .bar1, .menu-bars .bar2, .menu-bars .bar3 {
+  width: 25px;
+  height: 3px;
+  margin: 4.5px 0;
+  background-color: var(--sidebar-header);
+}
+
+.navbar-nav.ml-auto {
+  display: flex;
+  flex-direction: row !important;
+}
+.navbar-nav.ml-auto .nav-link {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  color: var(--sidebar-header);
+}
+.navbar-nav.ml-auto .nav-link:hover {
+  color: #074549;
+}
+
+.sidebar {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  max-width: 270px;
+  min-height: 100%;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.4s ease;
+  box-shadow: 2px 0px 3px 0px rgba(0, 0, 0, 0.11);
+  top: 0;
+  left: 0;
+  right: inherit;
+  bottom: 0;
+}
+.sidebar.isClose {
+  transform: translate3d(-270px, 0, 0);
+}
+.sidebar .content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+}
+.sidebar .content .sidebar-header {
+  width: 100%;
+  position: fixed;
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.sidebar .content .sidebar-header h3 {
+  font-size: 2rem;
+  color: var(--sidebar-header);
+  line-height: 50px;
+}
+.sidebar .content .sidebar-list {
+  margin-top: 15px;
+  padding-top: 80px;
+  flex: 1;
+  background: #ffffff;
+}
+.sidebar .content .sidebar-list .sidebar-link li {
+  list-style-type: none;
+  border-bottom: 1px dotted rgba(90, 90, 90, 0.24);
+}
+.sidebar .content .sidebar-list .sidebar-link li:last-child {
+  border-bottom: transparent;
+}
+.sidebar .content .sidebar-list .sidebar-link li a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--sidebar-header);
+  border-left: 5px solid transparent;
+}
+.sidebar .content .sidebar-list .sidebar-link li a:hover {
+  color: var(--sidebar-list-hover);
+  border-left: 5px solid var(--sidebar-header);
+}
+.sidebar .content .sidebar-list .sidebar-link li.active a {
+  color: #ffffff;
+  border-left: 5px solid var(--sidebar-header);
+  background-color: #074549;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+}
+.main-container nav {
+  transition: all 0.4s ease;
+}
+.main-container.isOpen {
+  margin-left: 275px;
+}
+.main-container.isOpen nav {
+  transition: all 0.4s ease;
+  margin-left: 275px;
+}
+.main-container .content {
+  flex: 1;
+  display: flex;
+  min-height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+}
+
+#MainContainer .grid-container {
+  grid-template-columns: repeat(3, 1fr);
+}
