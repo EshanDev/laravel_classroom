@@ -12,9 +12,11 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+	.js('resources/js/ui.js', 'public/js')
+    .sass('resources/sass/app.scss', 'public/css')
     .sass('resources/sass/classroom.scss', 'public/css')
     .options({
     	processCssUrls: false
-    });
+	});
 
 mix.browserSync('http://127.0.0.1:8000');

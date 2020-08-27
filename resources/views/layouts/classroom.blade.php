@@ -29,8 +29,8 @@
                     <!-- Content Two -->
                     <div class="sidebar-list">
                         <ul id="SLink" class="sidebar-link">
-                            <li class="{{ Request::path() == 'classroom/index' ? 'active' : '' }}"><a href="{{ route('classroom.dashboard') }}">หน้าหลัก</a></li>
-                            <li class="Slink-item"><a href="#">บัญชีผู้ใช้งาน</a></li>
+                        	<li class="{{ set_active('classroom') }}"><a href="{{ url('/classroom') }}">หน้าหลัก</a></li>
+                            <li class="{{ set_active('classroom/user/profile') }}"><a href="{{ url('/classroom/user/profile') }}">บัญชีผู้ใช้งาน</a></li>
                             <li class="Slink-item"><a href="#">คอร์สเพลย์ลิสต์</a></li>
                             <li class="{{ Request::path() == 'classroom/store' ? 'active' : '' }}"><a href="{{ route('classroom.test') }}">แบบทดสอบ</a></li>
                             <li class="Slink-item"><a href="#">ติดต่อผู้ดูแลระบบ</a></li>

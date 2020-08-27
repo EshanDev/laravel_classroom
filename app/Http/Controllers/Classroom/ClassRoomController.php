@@ -23,4 +23,8 @@ class ClassRoomController extends Controller
         return view('classroom.index');
     }
 
+    public function ProFile(){
+        return view('classroom.index');
+    }
+
 }

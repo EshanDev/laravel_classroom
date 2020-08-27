@@ -17,10 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('/', 'ClassRoomController', [
 	'names' => [
-		'index' => 'classroom.dashboard',
+		'index' => 'classroom',
 		'store' => 'classroom.test',
 	]
 ]);
 
-
+Route::get('/user/profile', 'ClassRoomController@ProFile')->name('classroom.user.profile');
 
