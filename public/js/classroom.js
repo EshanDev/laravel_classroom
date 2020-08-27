@@ -29,5 +29,12 @@ window.onload = function() {
     //     wrapper.classList.remove('isOpen')
     //     container.classList.remove('isOpen')
     // }
+
 };
 
+$(function() {
+    $('.Slink-item').click(function(){
+        $('.Slink-item').removeClass('active');
+        $(this).addClass('active');
+    });
+})

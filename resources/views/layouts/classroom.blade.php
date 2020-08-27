@@ -28,13 +28,13 @@
 
                     <!-- Content Two -->
                     <div class="sidebar-list">
-                        <ul class="sidebar-link">
-                            <li class="active"><a href="#">หน้าหลัก</a></li>
-                            <li><a href="#">บัญชีผู้ใช้งาน</a></li>
-                            <li><a href="#">คอร์สเพลย์ลิสต์</a></li>
-                            <li><a href="#">แบบทดสอบ</a></li>
-                            <li><a href="#">ติดต่อผู้ดูแลระบบ</a></li>
-                            <li><a href="#">ออกจากระบบ</a></li>
+                        <ul id="SLink" class="sidebar-link">
+                            <li class="{{ Request::path() == 'classroom/index' ? 'active' : '' }}"><a href="{{ route('classroom.dashboard') }}">หน้าหลัก</a></li>
+                            <li class="Slink-item"><a href="#">บัญชีผู้ใช้งาน</a></li>
+                            <li class="Slink-item"><a href="#">คอร์สเพลย์ลิสต์</a></li>
+                            <li class="{{ Request::path() == 'classroom/store' ? 'active' : '' }}"><a href="{{ route('classroom.test') }}">แบบทดสอบ</a></li>
+                            <li class="Slink-item"><a href="#">ติดต่อผู้ดูแลระบบ</a></li>
+                            <li class="Slink-item"><a href="#">ออกจากระบบ</a></li>
                         </ul>
                     </div>
                     <!-- End Content Two -->
@@ -57,7 +57,7 @@
                     </div>
                     <div class="navbar-links">
                         <ul class="navbar-nav ml-auto ">
-                            <li class="nav-item hidden-sm"><a href="#login" class="nav-link">Login</a></li>
+                            <li class="nav-item hidden-sm"><a href="{{ route('login') }}" class="nav-link">Login</a></li>
                             <li class="nav-item hidden-sm"><a href="#register" class="nav-link">Register</a></li>
                             <li class="nav-item nav-link visible-sm">Guest</li>
                         </ul>
@@ -65,12 +65,8 @@
                 </div>
             </nav>
             <div class="content bg-light py-5">
-                <div class="container-fluid py-3 px-4">
-                    <div class="grid-container">
-                        <div class="grid-item">left <div id="textshow"></div></div>
-                        <div class="grid-item">center</div>
-                        <div class="grid-item">right</div>
-                    </div>
+                <div class="container-fluid py-3">
+                    @yield('main-container')
                 </div>
             </div>
 
@@ -88,5 +84,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   
     <script src="{{ asset('js/classroom.js') }}"></script>
+    
+        @yield('scrpt')
+
+
 </body>
 </html>
