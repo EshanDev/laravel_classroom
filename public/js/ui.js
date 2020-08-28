@@ -104,7 +104,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\14Studio\Desktop\Woskshop\laravel_classroom\resources\js\ui.js */"./resources/js/ui.js");
+module.exports = __webpack_require__(/*! C:\Users\green\Desktop\Workshop\laravel_classroom\resources\js\ui.js */"./resources/js/ui.js");
 
 
 /***/ })
