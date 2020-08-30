@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 import Classroom from './components/ClassroomComponent.vue'
 import Home from './components/classroom/views/Home'
-import About from './components/classroom/views/About'
+import About from './components/classroom/views/Playlist'
 const router = new VueRouter({
     mode: 'history',
     routes: [{

@@ -20,24 +20,16 @@
                             <router-link :to="{name: 'home'}" exact>หน้าหลัก</router-link>
                         </li>
                         <li>
-                            <router-link :to="{name: 'profile'}"
-                            >บัญชีผู้ใช้งาน</router-link
-                            >
+                            <router-link :to="{name: 'profile'}">บัญชีผู้ใช้งาน</router-link>
                         </li>
                         <li>
-                            <router-link to="/classroom/playlist"
-                            >เพลย์ลิสต์</router-link
-                            >
+                            <router-link to="/classroom/playlist">เพลย์ลิสต์</router-link>
                         </li>
                         <li>
-                            <router-link to="/classroom/quiz"
-                            >แบบทดสอบ</router-link
-                            >
+                            <router-link to="/classroom/quiz">แบบทดสอบ</router-link>
                         </li>
                         <li>
-                            <router-link to="/classroom/contact"
-                            >ติดต่อผู้ดูและระบบ</router-link
-                            >
+                            <router-link to="/classroom/contact">ติดต่อผู้ดูและระบบ</router-link>
                         </li>
                         <li>
                             <router-link to="/classroom/logout">ออกจากระบบ</router-link>
@@ -52,9 +44,7 @@
         <!-- Main Container -->
         <div id="MainContainer" class="main-container isOpen">
             <!-- Top Navbar -->
-            <nav
-                class="navbar navbar-expand navbar-light bg-light shadow-sm fixed-top"
-            >
+            <nav class="navbar navbar-expand navbar-light bg-light shadow-sm fixed-top">
                 <div class="container-fluid">
                     <div id="ToggleBar" class="navbar-header">
                         <div class="menu-bars">
@@ -86,6 +76,7 @@
     export default {
 
     }
+
 </script>
 
 <style scoped>
@@ -94,4 +85,5 @@
         border-left: 5px solid #00695C !important;
         background-color: rgb(7, 69, 73);
     }
+
 </style>
