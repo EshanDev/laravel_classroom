@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
-import App from './views/App'
-import Home from './views/Home'
-import About from './views/About'
+import Classroom from './components/ClassroomComponent.vue'
+import Home from './components/classroom/views/Home'
+import About from './components/classroom/views/About'
 const router = new VueRouter({
     mode: 'history',
     routes: [{
@@ -16,11 +16,9 @@ const router = new VueRouter({
         component: About
     }]
 });
-const add = new Vue({
+const classroom = new Vue({
     el: '#app',
-    components: {
-        App
-    },
+    components: {Classroom},
     router
 });
 

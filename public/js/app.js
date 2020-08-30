@@ -49889,9 +49889,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\green\Desktop\Workshop\laravel_classroom\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\Users\green\Desktop\Workshop\laravel_classroom\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\Users\green\Desktop\Workshop\laravel_classroom\resources\sass\classroom.scss */"./resources/sass/classroom.scss");
+__webpack_require__(/*! C:\Users\14Studio\Desktop\Woskshop\laravel_classroom\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\14Studio\Desktop\Woskshop\laravel_classroom\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\Users\14Studio\Desktop\Woskshop\laravel_classroom\resources\sass\classroom.scss */"./resources/sass/classroom.scss");
 
 
 /***/ })
