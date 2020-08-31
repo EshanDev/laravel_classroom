@@ -3,15 +3,15 @@
         display: grid;
         grid-gap: 10px;
         margin: 0;
-        grid-template-areas: "profile infomation infomation" "list list list";
+        grid-template-areas: "profile information information" "list list list";
         grid-template-columns: 300px 1fr 1fr;
         grid-template-rows: 350px 100%;
     }
     .profile {
         grid-area: profile;
     }
-    .infomation {
-        grid-area: infomation;
+    .information {
+        grid-area: information;
     }
     .list {
         grid-area: list;
@@ -22,12 +22,11 @@
         min-height: 350px;
         padding: 10px;
         .avatar {
-            width: 150px;
+            width: 180px;
             height: auto;
             object-fit: cover;
             border-radius: 100%;
             align-self: center;
-            margin-top: 15px;
         }
         p {
             padding: 0;
@@ -35,10 +34,40 @@
         }
     }
     .grid-container {
-        .profile {
-            .content {
+        #profile_content {
+            &.d-flex {
                 display: flex;
                 flex-direction: column;
+                height: 100%;
+                h4 {
+                    margin-bottom: 15px;
+                }
+                .img-profile {
+                    flex: 1;
+                    align-self: center;
+                }
+                .user-info {
+                    p {
+                        &:nth-of-type(1) {
+                            &::before {
+                                content: "ชื่อ/นามสกุล:";
+                                margin-right: 5px;
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            &::before {
+                                content: "ชื่อผู้ใช้งาน:";
+                                margin-right: 5px;
+                            }
+                        }
+                        &:nth-of-type(3) {
+                            &::before {
+                                content: "รหัสนักศึกษา:r";
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

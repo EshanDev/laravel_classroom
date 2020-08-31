@@ -38447,28 +38447,28 @@ var staticRenderFns = [
                 _vm._v("โปรไฟล์ผู้ใช้งาน")
               ]),
               _vm._v(" "),
-              _c("img", {
-                staticClass: "avatar",
-                attrs: {
-                  src: "https://via.placeholder.com/150x150",
-                  alt: "user img"
-                }
-              }),
+              _c("div", { staticClass: "img-profile" }, [
+                _c("img", {
+                  staticClass: "avatar",
+                  attrs: {
+                    src: "https://via.placeholder.com/150x150",
+                    alt: "user img"
+                  }
+                })
+              ]),
               _vm._v(" "),
               _c("div", { staticClass: "user-info" }, [
-                _c("p", { staticClass: "name" }, [_vm._v("Name : ")]),
+                _c("p", { staticClass: "name" }, [_vm._v("ธีรพงษ์ บัวงาม")]),
                 _vm._v(" "),
-                _c("p", { staticClass: "id" }, [_vm._v("ID : ")]),
+                _c("p", { staticClass: "id" }, [_vm._v("User001")]),
                 _vm._v(" "),
-                _c("p", { staticClass: "student-code" }, [
-                  _vm._v("Student code : ")
-                ])
+                _c("p", { staticClass: "student-code" }, [_vm._v("5912420009")])
               ])
             ]
           )
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "grid-item infomation bg-light shadow-sm" }, [
+        _c("div", { staticClass: "grid-item information bg-light shadow-sm" }, [
           _vm._v("infomation")
         ]),
         _vm._v(" "),
