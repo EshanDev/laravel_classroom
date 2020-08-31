@@ -1,3 +1,20 @@
 <template>
-	<div>This is Homepage</div>
+	<div id="classroom_home">
+		<div class="grid-container">
+			<div class="grid-item profile bg-light shadow-sm">
+                <div id="profile_content" class="d-flex justify-content-center">
+                    <h4 class="text-center">โปรไฟล์ผู้ใช้งาน</h4>
+                    <img src="https://via.placeholder.com/150x150" alt="user img" class="avatar">
+                    <div class="user-info">
+                        <p class="name">Name : </p>
+                        <p class="id">ID : </p>
+                        <p class="student-code">Student code : </p>
+                    </div>
+                </div>
+            </div>
+			<div class="grid-item infomation bg-light shadow-sm">infomation</div>
+			<div class="grid-item list bg-light shadow-sm">list</div>
+		</div>
+	</div>
 </template>
+

@@ -1,0 +1,45 @@
+#classroom_home {
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        margin: 0;
+        grid-template-areas: "profile infomation infomation" "list list list";
+        grid-template-columns: 300px 1fr 1fr;
+        grid-template-rows: 350px 100%;
+    }
+    .profile {
+        grid-area: profile;
+    }
+    .infomation {
+        grid-area: infomation;
+    }
+    .list {
+        grid-area: list;
+    }
+    /* PROFILE */
+    .profile {
+        width: 300px;
+        min-height: 350px;
+        padding: 10px;
+        .avatar {
+            width: 150px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 100%;
+            align-self: center;
+            margin-top: 15px;
+        }
+        p {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .grid-container {
+        .profile {
+            .content {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

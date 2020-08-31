@@ -434,3 +434,46 @@ h6 {
   background-color: #FFF;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
+
+#classroom_home {
+  /* PROFILE */
+}
+#classroom_home .grid-container {
+  display: grid;
+  grid-gap: 10px;
+  margin: 0;
+  grid-template-areas: "profile infomation infomation" "list list list";
+  grid-template-columns: 300px 1fr 1fr;
+  grid-template-rows: 350px 100%;
+}
+#classroom_home .profile {
+  grid-area: profile;
+}
+#classroom_home .infomation {
+  grid-area: infomation;
+}
+#classroom_home .list {
+  grid-area: list;
+}
+#classroom_home .profile {
+  width: 300px;
+  min-height: 350px;
+  padding: 10px;
+}
+#classroom_home .profile .avatar {
+  width: 150px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  align-self: center;
+  margin-top: 15px;
+}
+#classroom_home .profile p {
+  padding: 0;
+  margin: 0;
+}
+#classroom_home .grid-container .profile .content {
+  display: flex;
+  flex-direction: column;
+}
