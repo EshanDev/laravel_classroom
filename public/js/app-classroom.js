@@ -38426,58 +38426,57 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { attrs: { id: "classroom_home" } }, [
+    _c("div", { staticClass: "grid-container" }, [
+      _c("div", { staticClass: "grid-item profile bg-light shadow-sm" }, [
+        _c(
+          "div",
+          {
+            staticClass: "d-flex justify-content-center",
+            attrs: { id: "profile_content" }
+          },
+          [
+            _c("h4", { staticClass: "text-center" }, [
+              _vm._v("โปรไฟล์ผู้ใช้งาน")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "img-profile" }, [
+              _c("img", {
+                staticClass: "avatar",
+                attrs: { src: "/images/profiles/original.jpg", alt: "user img" }
+              })
+            ]),
+            _vm._v(" "),
+            _vm._m(0),
+            _vm._v(" "),
+            _c("button", { staticClass: "btn btn-primary" }, [
+              _vm._v("แก้ไขโปรไฟล์")
+            ])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "grid-item information bg-light shadow-sm" }, [
+        _vm._v("infomation")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "grid-item list bg-light shadow-sm" }, [
+        _vm._v("list")
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "classroom_home" } }, [
-      _c("div", { staticClass: "grid-container" }, [
-        _c("div", { staticClass: "grid-item profile bg-light shadow-sm" }, [
-          _c(
-            "div",
-            {
-              staticClass: "d-flex justify-content-center",
-              attrs: { id: "profile_content" }
-            },
-            [
-              _c("h4", { staticClass: "text-center" }, [
-                _vm._v("โปรไฟล์ผู้ใช้งาน")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "img-profile" }, [
-                _c("img", {
-                  staticClass: "avatar",
-                  attrs: {
-                    src: "https://via.placeholder.com/150x150",
-                    alt: "user img"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "user-info" }, [
-                _c("p", { staticClass: "name" }, [
-                  _vm._v("ธีรพงษ์ บัวงาม0000000000000000000000")
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "id" }, [_vm._v("User001")]),
-                _vm._v(" "),
-                _c("p", { staticClass: "student-code" }, [_vm._v("5912420009")])
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "grid-item information bg-light shadow-sm" }, [
-          _vm._v("infomation")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "grid-item list bg-light shadow-sm" }, [
-          _vm._v("list")
-        ])
-      ])
+    return _c("div", { staticClass: "user-info" }, [
+      _c("p", { staticClass: "name" }, [_vm._v("ธีรพงษ์ บัวงาม")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "id" }, [_vm._v("User001")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "student-code" }, [_vm._v("5912420009")])
     ])
   }
 ]

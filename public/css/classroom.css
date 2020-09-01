@@ -461,12 +461,14 @@ h6 {
   padding: 10px;
 }
 #classroom_home .profile .avatar {
-  width: 180px;
-  height: auto;
+  width: 150px;
+  height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 100%;
   align-self: center;
+  border: 4px solid white;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
 }
 #classroom_home .profile p {
   padding: 0;
@@ -484,6 +486,9 @@ h6 {
   flex: 1;
   align-self: center;
 }
+#classroom_home .grid-container #profile_content.d-flex .user-info {
+  margin-bottom: 5px;
+}
 #classroom_home .grid-container #profile_content.d-flex .user-info p {
   width: 100%;
   overflow: hidden;
@@ -494,9 +499,10 @@ h6 {
   color: #03462c;
 }
 #classroom_home .grid-container #profile_content.d-flex .user-info p:nth-of-type(1)::before {
-  content: "\E0A\E37\E48\E2D/\E19\E32\E21\E2A\E01\E38\E25:";
+  content: "\E0A\E37\E48\E2D/\E2A\E01\E38\E25:";
   margin-right: 5px;
   color: #919191;
+  font-size: 14px;
 }
 #classroom_home .grid-container #profile_content.d-flex .user-info p:nth-of-type(2) {
   color: #03462c;
@@ -505,6 +511,7 @@ h6 {
   content: "\E0A\E37\E48\E2D\E1C\E39\E49\E43\E0A\E49\E07\E32\E19:";
   margin-right: 5px;
   color: #919191;
+  font-size: 14px;
 }
 #classroom_home .grid-container #profile_content.d-flex .user-info p:nth-of-type(3) {
   color: #03462c;
@@ -513,4 +520,5 @@ h6 {
   content: "\E23\E2B\E31\E2A\E19\E31\E01\E28\E36\E01\E29\E32:";
   margin-right: 5px;
   color: #919191;
+  font-size: 14px;
 }
