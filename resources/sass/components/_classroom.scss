@@ -3,24 +3,29 @@
         display: grid;
         grid-gap: 10px;
         margin: 0;
-        grid-template-areas: "profile information information" "list list list";
+        grid-template-areas: "profile information information""list list list";
         grid-template-columns: 300px 1fr 1fr;
         grid-template-rows: 350px 100%;
     }
+
     .profile {
         grid-area: profile;
     }
+
     .information {
         grid-area: information;
     }
+
     .list {
         grid-area: list;
     }
+
     /* PROFILE */
     .profile {
         width: 300px;
         min-height: 350px;
         padding: 10px;
+
         .avatar {
             width: 180px;
             height: auto;
@@ -28,45 +33,68 @@
             border-radius: 100%;
             align-self: center;
         }
+
         p {
             padding: 0;
             margin: 0;
         }
     }
+
     .grid-container {
         #profile_content {
             &.d-flex {
                 display: flex;
                 flex-direction: column;
                 height: 100%;
+
                 h4 {
                     margin-bottom: 15px;
                 }
+
                 .img-profile {
                     flex: 1;
                     align-self: center;
                 }
+
                 .user-info {
                     p {
+                        width: 100%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+
                         &:nth-of-type(1) {
+                            color: #03462c;
+
                             &::before {
                                 content: "ชื่อ/นามสกุล:";
                                 margin-right: 5px;
+                                color: #919191;
+
                             }
                         }
+
                         &:nth-of-type(2) {
+                            color: #03462c;
+
                             &::before {
                                 content: "ชื่อผู้ใช้งาน:";
                                 margin-right: 5px;
+                                color: #919191;
                             }
                         }
+
                         &:nth-of-type(3) {
+                            color: #03462c;
+
                             &::before {
-                                content: "รหัสนักศึกษา:r";
+                                content: "รหัสนักศึกษา:";
                                 margin-right: 5px;
+                                color: #919191;
                             }
                         }
                     }
+
                 }
             }
         }

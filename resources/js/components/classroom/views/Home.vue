@@ -6,7 +6,7 @@
                     <h4 class="text-center">โปรไฟล์ผู้ใช้งาน</h4>
                     <div class="img-profile"><img src="https://via.placeholder.com/150x150" alt="user img" class="avatar"></div>
                     <div class="user-info">
-                        <p class="name">ธีรพงษ์ บัวงาม</p>
+                        <p class="name">ธีรพงษ์ บัวงาม0000000000000000000000</p>
                         <p class="id">User001</p>
                         <p class="student-code">5912420009</p>
                     </div>

@@ -38458,7 +38458,9 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "user-info" }, [
-                _c("p", { staticClass: "name" }, [_vm._v("ธีรพงษ์ บัวงาม")]),
+                _c("p", { staticClass: "name" }, [
+                  _vm._v("ธีรพงษ์ บัวงาม0000000000000000000000")
+                ]),
                 _vm._v(" "),
                 _c("p", { staticClass: "id" }, [_vm._v("User001")]),
                 _vm._v(" "),
@@ -55532,8 +55534,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\green\Desktop\Workshop\laravel_classroom\resources\js\app-classroom.js */"./resources/js/app-classroom.js");
-module.exports = __webpack_require__(/*! C:\Users\green\Desktop\Workshop\laravel_classroom\resources\sass\classroom.scss */"./resources/sass/classroom.scss");
+__webpack_require__(/*! C:\Users\14Studio\Desktop\Woskshop\laravel_classroom\resources\js\app-classroom.js */"./resources/js/app-classroom.js");
+module.exports = __webpack_require__(/*! C:\Users\14Studio\Desktop\Woskshop\laravel_classroom\resources\sass\classroom.scss */"./resources/sass/classroom.scss");
 
 
 /***/ })

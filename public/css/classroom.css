@@ -484,15 +484,33 @@ h6 {
   flex: 1;
   align-self: center;
 }
+#classroom_home .grid-container #profile_content.d-flex .user-info p {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#classroom_home .grid-container #profile_content.d-flex .user-info p:nth-of-type(1) {
+  color: #03462c;
+}
 #classroom_home .grid-container #profile_content.d-flex .user-info p:nth-of-type(1)::before {
   content: "\E0A\E37\E48\E2D/\E19\E32\E21\E2A\E01\E38\E25:";
   margin-right: 5px;
+  color: #919191;
+}
+#classroom_home .grid-container #profile_content.d-flex .user-info p:nth-of-type(2) {
+  color: #03462c;
 }
 #classroom_home .grid-container #profile_content.d-flex .user-info p:nth-of-type(2)::before {
   content: "\E0A\E37\E48\E2D\E1C\E39\E49\E43\E0A\E49\E07\E32\E19:";
   margin-right: 5px;
+  color: #919191;
+}
+#classroom_home .grid-container #profile_content.d-flex .user-info p:nth-of-type(3) {
+  color: #03462c;
 }
 #classroom_home .grid-container #profile_content.d-flex .user-info p:nth-of-type(3)::before {
-  content: "\E23\E2B\E31\E2A\E19\E31\E01\E28\E36\E01\E29\E32:r";
+  content: "\E23\E2B\E31\E2A\E19\E31\E01\E28\E36\E01\E29\E32:";
   margin-right: 5px;
+  color: #919191;
 }
