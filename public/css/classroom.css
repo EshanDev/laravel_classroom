@@ -444,10 +444,11 @@ h6 {
   margin: 0;
   grid-template-areas: "profile information information" "list list list";
   grid-template-columns: 300px 1fr 1fr;
-  grid-template-rows: 350px 100%;
+  grid-template-rows: 350px 1fr;
 }
 #classroom_home .profile {
   grid-area: profile;
+  background-color: #ffffff !important;
 }
 #classroom_home .information {
   grid-area: information;

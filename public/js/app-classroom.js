@@ -38428,7 +38428,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "classroom_home" } }, [
     _c("div", { staticClass: "grid-container" }, [
-      _c("div", { staticClass: "grid-item profile bg-light shadow-sm" }, [
+      _c("div", { staticClass: "grid-item profile shadow-sm" }, [
         _c(
           "div",
           {
@@ -38456,13 +38456,9 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "grid-item information bg-light shadow-sm" }, [
-        _vm._v("infomation")
-      ]),
+      _vm._m(1),
       _vm._v(" "),
-      _c("div", { staticClass: "grid-item list bg-light shadow-sm" }, [
-        _vm._v("list")
-      ])
+      _c("div", { staticClass: "grid-item list" }, [_vm._v("list")])
     ])
   ])
 }
@@ -38477,6 +38473,14 @@ var staticRenderFns = [
       _c("p", { staticClass: "id" }, [_vm._v("User001")]),
       _vm._v(" "),
       _c("p", { staticClass: "student-code" }, [_vm._v("5912420009")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "grid-item information" }, [
+      _c("canvas", { attrs: { id: "userChart" } })
     ])
   }
 ]
@@ -55533,8 +55537,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\14Studio\Desktop\Woskshop\laravel_classroom\resources\js\app-classroom.js */"./resources/js/app-classroom.js");
-module.exports = __webpack_require__(/*! C:\Users\14Studio\Desktop\Woskshop\laravel_classroom\resources\sass\classroom.scss */"./resources/sass/classroom.scss");
+__webpack_require__(/*! /Users/Studio3/Desktop/Workshop/laravel_classroom/resources/js/app-classroom.js */"./resources/js/app-classroom.js");
+module.exports = __webpack_require__(/*! /Users/Studio3/Desktop/Workshop/laravel_classroom/resources/sass/classroom.scss */"./resources/sass/classroom.scss");
 
 
 /***/ })
