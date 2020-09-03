@@ -1,5 +1,5 @@
 <template>
-  <div id="classroom_home">
+  <div id="classroom_home" class="classroom-container">
     <div class="grid-container">
       <div class="grid-item profile shadow-sm">
         <div id="profile_content" class="d-flex justify-content-center">
@@ -16,11 +16,10 @@
         </div>
       </div>
       <div class="grid-item information">
-        <canvas id="userChart"></canvas>
+        <canvas id="myChart" width="400" height="400"></canvas>
       </div>
       <div class="grid-item list">list</div>
     </div>
   </div>
 </template>
-
 

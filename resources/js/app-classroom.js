@@ -1,4 +1,4 @@
-require ('./bootstrap');
+require('./bootstrap');
 
 
 import Vue from 'vue';
@@ -9,7 +9,9 @@ import Vuex from 'vuex';
 import Classroom from './components/classroom/ClassroomApp';
 
 //Routes
-import {routes} from './classroom_routes';
+import { routes } from './classroom_routes';
+// ChartJS
+import Chartjs from 'chart.js';
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
@@ -22,5 +24,5 @@ const router = new VueRouter({
 const app = new Vue({
     el: '#app',
     router,
-    components: {Classroom}
+    components: { Classroom }
 });

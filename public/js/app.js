@@ -37368,7 +37368,7 @@ $(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/Studio3/Desktop/Workshop/laravel_classroom/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\green\Desktop\Workshop\laravel_classroom\resources\js\app.js */"./resources/js/app.js");
 
 
 /***/ })
