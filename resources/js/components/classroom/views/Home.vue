@@ -16,10 +16,17 @@
         </div>
       </div>
       <div class="grid-item information">
-        <canvas id="myChart" width="400" height="400"></canvas>
+        <Chart/>
       </div>
       <div class="grid-item list">list</div>
     </div>
   </div>
 </template>
 
+<script>
+import Chart from './Chart';
+export default {
+    name: 'home',
+    components: {Chart}
+}
+</script>
