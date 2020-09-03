@@ -1,0 +1,89 @@
+.grid-container {
+    @include breakpoint(480px, max) {
+        @include breakpoint(320px, min) {
+            display: flex;
+            flex-direction: column;
+            // Profile
+            .profile {
+                display: flex;
+                flex-direction: column;
+                width: 200px;
+                min-height: 250px;
+                padding: 10px;
+                margin: 0 auto;
+                .avatar {
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    border-radius: 100%;
+                    align-self: center;
+                    border: 4px solid rgb(255, 255, 255);
+                    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+                }
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    @include breakpoint(1000px, min) {
+        display: grid;
+        grid-gap: 10px;
+        margin: 0;
+        grid-template-areas: "profile information information""list list list";
+        grid-template-columns: 300px 1fr 1fr;
+        grid-template-rows: 350px 1fr;
+        .profile {
+            grid-area: profile;
+            background-color: #ffffff !important;
+        }
+        .information {
+            grid-area: information;
+        }
+        .list {
+            grid-area: list;
+        }
+        /* PROFILE */
+        .profile {
+            width: 300px;
+            min-height: 350px;
+            padding: 10px;
+            .avatar {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 100%;
+                align-self: center;
+                border: 4px solid rgb(255, 255, 255);
+                box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+            }
+            p {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@import './profiles-content';
+.profile {
+    background-color: #ffffff !important;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    .avatar {
+        width: 100%;
+        height: 100%;
+        max-width: 150px;
+        max-height: 150px;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+}
+
+.information {
+    @include breakpoint(320px, max) {
+        display: none;
+    }
+}

@@ -1,0 +1,51 @@
+// Profile content
+#profile_content {
+    &.d-flex {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        h4 {
+            margin-bottom: 15px;
+        }
+        .img-profile {
+            flex: 1;
+            align-self: center;
+        }
+        .user-info {
+            p {
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                &:nth-of-type(1) {
+                    color: #03462c;
+                    &::before {
+                        content: "ชื่อ/สกุล:";
+                        margin-right: 5px;
+                        color: #919191;
+                        font-size: 14px;
+                    }
+                }
+                &:nth-of-type(2) {
+                    color: #03462c;
+                    &::before {
+                        content: "ชื่อผู้ใช้งาน:";
+                        margin-right: 5px;
+                        color: #919191;
+                        font-size: 14px;
+                    }
+                }
+                &:nth-of-type(3) {
+                    color: #03462c;
+                    &::before {
+                        content: "รหัสนักศึกษา:";
+                        margin-right: 5px;
+                        color: #919191;
+                        font-size: 14px;
+                    }
+                }
+            }
+            margin-bottom: 5px;
+        }
+    }
+}
