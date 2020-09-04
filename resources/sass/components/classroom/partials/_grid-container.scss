@@ -1,0 +1,6 @@
+@import "../mixins";
+        @include breakpoint(768px, min) {
+            display: grid;
+            grid-template-areas: "profile information information" "list list list";
+            grid-template-columns: 250px 1fr 1fr;
+        }

@@ -13,3 +13,6 @@
 //     }
 // }
 
+@mixin LH($point){
+	line-height: $point;
+}

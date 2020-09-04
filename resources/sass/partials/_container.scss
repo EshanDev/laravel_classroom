@@ -1,39 +1,47 @@
-@import '../mixins';
+@import "../mixins";
 
-
-.main-container{
+.main-container {
+    position: fixed;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
 
-    transition: all .4s ease;
-    nav{
-        transition: all .4s ease;
+    transition: all 0.4s ease;
+    nav {
+        transition: all 0.4s ease;
     }
-    &.isOpen{
+    &.isOpen {
         margin-left: 275px;
         transform: translate3d(0, 0, 0);
 
-        @media (max-width: 780px){
+        @media (max-width: 780px) {
             margin-left: 0;
             // transform: translate3d(275px, 0, 0) !important;
         }
-        nav{
+        nav {
             margin-left: 0;
-            transition: all .4s ease;
+            transition: all 0.4s ease;
             transform: translate3d(0 0, 0);
-            @media (max-width: 780px){
+            @media (max-width: 780px) {
                 transform: translate3d(0, 0, 0) !important;
             }
         }
-        position: fixed;
-        left: 0;
-        right: 0;
-
     }
-    .content{
+    .content {
         flex: 1;
         display: flex;
         min-height: 100vh;
     }
 
+    #classroom-content {
+        &.content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: auto;
+        }
+    }
 }

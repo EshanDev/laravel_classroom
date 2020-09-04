@@ -37335,17 +37335,19 @@ window.onload = function () {
     wrapper.classList.toggle("isOpen");
     sidebar.classList.toggle("isClose");
     container.classList.toggle("isOpen");
-  });
-  window.addEventListener("resize", function () {
-    var w = window.innerWidth;
-    var h = window.innerHeight; // document.getElementById("textshow").innerHTML =
-    //     "Width: " + w + "<br>Height: " + h;
-    //     if(window.innerWidth < 768){
-    //     sidebar.classList.add('isClose')
-    //     wrapper.classList.remove('isOpen')
-    //     container.classList.remove('isOpen')
-    // }
-  }); // if(window.innerWidth < 768){
+    this.classList.toggle('change');
+    this.classList.toggle('x');
+  }); // window.addEventListener("resize", function() {
+  //     var w = window.innerWidth;
+  //     var h = window.innerHeight;
+  //     let toggles = document.getElementById("ToggleBar");
+  //     // document.getElementById("textshow").innerHTML =
+  //     //     "Width: " + w + "<br>Height: " + h;
+  //     if(window.innerWidth < 768){
+  //         toggles.classList.add('x');
+  //     }
+  // });
+  // if(window.innerWidth < 768){
   //     sidebar.classList.add('isClose')
   //     wrapper.classList.remove('isOpen')
   //     container.classList.remove('isOpen')
@@ -37368,7 +37370,7 @@ $(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\green\Desktop\Workshop\laravel_classroom\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\laravel_classroom\resources\js\app.js */"./resources/js/app.js");
 
 
 /***/ })

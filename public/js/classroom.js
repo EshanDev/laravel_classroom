@@ -4,11 +4,13 @@ window.onload = function() {
         container = document.getElementById("MainContainer"),
         toggle = document.getElementById("ToggleBar");
 
+
     toggle.addEventListener("click", function() {
         wrapper.classList.toggle("isOpen");
         sidebar.classList.toggle("isClose");
-        container.classList.toggle("isOpen");
+        container.classList.toggle("isOpen");     
     });
+
 
     window.addEventListener("resize", function() {
         var w = window.innerWidth;
@@ -38,3 +40,4 @@ $(function() {
         $(this).addClass('active');
     });
 })
+

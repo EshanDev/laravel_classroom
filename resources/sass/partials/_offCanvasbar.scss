@@ -1,22 +1,36 @@
 @import "../mixins/mediaQuery";
-
-@include breakpoint(780px, max){
-	.sidebar{
-		transform: translate3d(-270px, 0, 0) !important;
-		&.isClose{
-			transform: translate3d(0, 0, 0) !important;
-		}
-	}
-	.main-container{
-		transform: translate3d(270px, 0, 0) !important;
-		&.isOpen{
-			margin-left: 0px !important;
-			transform: translate3d(0, 0, 0) !important;
-
-		}
-		position: fixed;
-        left: 0;
-        right: 0;
-
-	}
+@include breakpoint(780px, max) {
+    .sidebar {
+        transform: translate3d(-270px, 0, 0) !important;
+        &.isClose {
+            transform: translate3d(0, 0, 0) !important;
+        }
+    }
+    .main-container {
+        transform: translate3d(270px, 0, 0) !important;
+        &.isOpen {
+            margin-left: 0px !important;
+            transform: translate3d(0, 0, 0) !important;
+        } // position: fixed;
+        // left: 0;
+        // right: 0;
+    }
+    .change .bar1 {
+        transform: none;
+    }
+    .change .bar2 {
+        opacity: 1;
+    }
+    .change .bar3 {
+        transform: none;
+    }
+    .x .bar1 {
+        transform: rotate(-45deg) translate(-6px, 5px) !important;
+    }
+    .x .bar2 {
+        opacity: 0;
+    }
+    .x .bar3 {
+        transform: rotate(40deg) translate(-5px, -6px) !important;
+    }
 }

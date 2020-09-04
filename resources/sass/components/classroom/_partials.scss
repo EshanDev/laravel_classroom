@@ -1,0 +1,30 @@
+#classroom-content {
+    position: relative; // Grid Container
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        margin: 0 auto;
+        grid-template-areas: "profile profile profile" "information information information" "list list list";
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        @import "./partials/grid-container";
+    }
+    .profile {
+        grid-area: profile;
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+        padding: 15px;
+        background-color: #fff !important;
+        border-radius: 4px;
+        @import "./partials/profiles";
+    }
+    .information {
+        grid-area: information;
+        @import "./partials/information";
+    }
+    .list {
+        grid-area: list;
+        @import "./partials/lists";
+    }
+}

@@ -2069,7 +2069,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'home',
+  name: "home",
   components: {
     Chart: _Chart__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
@@ -22714,7 +22714,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.router-link-active[data-v-0b75a796] {\n    color: #ffffff !important;\n    border-left: 5px solid #00695C !important;\n    background-color: rgb(7, 69, 73);\n}\n\n", ""]);
+exports.push([module.i, "\n.router-link-active[data-v-0b75a796] {\r\n  color: #ffffff !important;\r\n  border-left: 5px solid #00695c !important;\r\n  background-color: rgb(7, 69, 73);\n}\r\n", ""]);
 
 // exports
 
@@ -22733,7 +22733,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.small {\n  height: 330px !important;\n}\n", ""]);
+exports.push([module.i, "\n.small {\r\n  height: 330px !important;\n}\r\n", ""]);
 
 // exports
 
@@ -76047,6 +76047,7 @@ var render = function() {
             _c("ul", { staticClass: "sidebar-link", attrs: { id: "SLink" } }, [
               _c(
                 "li",
+                { staticClass: "sidebar-item" },
                 [
                   _c(
                     "router-link",
@@ -76059,6 +76060,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "li",
+                { staticClass: "sidebar-item" },
                 [
                   _c("router-link", { attrs: { to: { name: "profile" } } }, [
                     _vm._v("บัญชีผู้ใช้งาน")
@@ -76069,6 +76071,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "li",
+                { staticClass: "sidebar-item" },
                 [
                   _c("router-link", { attrs: { to: "/classroom/playlist" } }, [
                     _vm._v("เพลย์ลิสต์")
@@ -76079,6 +76082,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "li",
+                { staticClass: "sidebar-item" },
                 [
                   _c("router-link", { attrs: { to: "/classroom/quiz" } }, [
                     _vm._v("แบบทดสอบ")
@@ -76089,6 +76093,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "li",
+                { staticClass: "sidebar-item" },
                 [
                   _c("router-link", { attrs: { to: "/classroom/contact" } }, [
                     _vm._v("ติดต่อผู้ดูและระบบ")
@@ -76099,6 +76104,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "li",
+                { staticClass: "sidebar-item" },
                 [
                   _c("router-link", { attrs: { to: "/classroom/logout" } }, [
                     _vm._v("ออกจากระบบ")
@@ -76120,14 +76126,21 @@ var render = function() {
         [
           _vm._m(1),
           _vm._v(" "),
-          _c("div", { staticClass: "content bg-light py-5" }, [
-            _c(
-              "div",
-              { staticClass: "container-fluid py-3" },
-              [_c("router-view")],
-              1
-            )
-          ])
+          _c(
+            "div",
+            {
+              staticClass: "content bg-light py-5",
+              attrs: { id: "classroom-content" }
+            },
+            [
+              _c(
+                "div",
+                { staticClass: "container-fluid py-3" },
+                [_c("router-view")],
+                1
+              )
+            ]
+          )
         ]
       )
     ]
@@ -76141,7 +76154,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "sidebar-header" }, [
       _c("h3", { staticClass: "text-center mp-none" }, [
         _c("i", { staticClass: "glyph-icon flaticon-001-workplace" }),
-        _vm._v("\n                    ห้องเรียน\n                ")
+        _vm._v("\n          ห้องเรียน\n        ")
       ])
     ])
   },
@@ -76159,7 +76172,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "container-fluid" }, [
           _c(
             "div",
-            { staticClass: "navbar-header", attrs: { id: "ToggleBar" } },
+            { staticClass: "navbar-header change", attrs: { id: "ToggleBar" } },
             [
               _c("div", { staticClass: "menu-bars" }, [
                 _c("div", { staticClass: "bar1" }),
@@ -76247,18 +76260,15 @@ var render = function() {
         _c("div", { staticClass: "grid-item profile shadow-sm" }, [
           _c(
             "div",
-            {
-              staticClass: "d-flex justify-content-center",
-              attrs: { id: "profile_content" }
-            },
+            { staticClass: "flex-container", attrs: { id: "profile_content" } },
             [
-              _c("h4", { staticClass: "text-center" }, [
+              _c("h4", { staticClass: "text-header" }, [
                 _vm._v("โปรไฟล์ผู้ใช้งาน")
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "img-profile" }, [
                 _c("img", {
-                  staticClass: "avatar",
+                  staticClass: "avatar img-fluid",
                   attrs: {
                     src: "/images/profiles/original.jpg",
                     alt: "user img"
@@ -76268,9 +76278,14 @@ var render = function() {
               _vm._v(" "),
               _vm._m(0),
               _vm._v(" "),
-              _c("button", { staticClass: "btn btn-primary" }, [
-                _vm._v("แก้ไขโปรไฟล์")
-              ])
+              _c(
+                "a",
+                {
+                  staticClass: "btn btn-primary",
+                  attrs: { href: "/user/edit" }
+                },
+                [_vm._v("แก้ไขโปรไฟล์")]
+              )
             ]
           )
         ]),
@@ -93481,8 +93496,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\green\Desktop\Workshop\laravel_classroom\resources\js\app-classroom.js */"./resources/js/app-classroom.js");
-module.exports = __webpack_require__(/*! C:\Users\green\Desktop\Workshop\laravel_classroom\resources\sass\classroom.scss */"./resources/sass/classroom.scss");
+__webpack_require__(/*! C:\laragon\www\laravel_classroom\resources\js\app-classroom.js */"./resources/js/app-classroom.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\laravel_classroom\resources\sass\classroom.scss */"./resources/sass/classroom.scss");
 
 
 /***/ })
