@@ -2,6 +2,7 @@ import Home from './components/classroom/views/Home';
 import Profile from './components/classroom/views/Profiles';
 import Playlist from './components/classroom/views/Playlist';
 import Quiz from './components/classroom/views/Quiz';
+import EditProfile from './components/classroom/views/EditProfile';
 
 
 
@@ -30,5 +31,10 @@ export const routes = [
 				path: '/classroom/quiz',
 				name: 'quiz',
 				component: Quiz
+			},
+			{
+				path: '/classroom/edit-profile',
+				name: 'edit-profile',
+				component: EditProfile
 			}
 ];

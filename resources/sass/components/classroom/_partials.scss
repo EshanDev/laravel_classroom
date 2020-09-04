@@ -1,5 +1,8 @@
 #classroom-content {
-    position: relative; // Grid Container
+    position: relative;
+
+    // 
+     // Grid Container
     .grid-container {
         display: grid;
         grid-gap: 10px;
@@ -27,4 +30,53 @@
         grid-area: list;
         @import "./partials/lists";
     }
+}
+
+// Edit Profile
+#edit-profile{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+
+    .grid-container{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+
+
+        .form-group{
+            &.d-grid{
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: repeat(2, 130px);
+            }
+        }
+
+        .grid-item{
+            &.edit{
+                padding: 15px;
+
+                @include breakpoint(480px, max)
+                {
+                    @include bg-rgba(#FFF, 1);
+                    width: 100%;
+                    max-width: 450px;
+                    form{
+                        min-width: 100%;
+                        .form-group{
+                            &.d-grid{
+                                display: grid;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    @import './partials/edit-profile';
 }

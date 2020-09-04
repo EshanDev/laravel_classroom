@@ -60,7 +60,7 @@
           </div>
         </div>
       </nav>
-      <div id="classroom-content" class="content bg-light py-5">
+      <div id="classroom-content" class="content py-5">
         <div class="container-fluid py-3">
           <router-view></router-view>
         </div>

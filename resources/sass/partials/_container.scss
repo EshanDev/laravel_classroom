@@ -31,14 +31,13 @@
     .content {
         flex: 1;
         display: flex;
-        min-height: 100vh;
     }
 
     #classroom-content {
         &.content {
             position: absolute;
             top: 0;
-            bottom: 0;
+            bottom: inherit;
             left: 0;
             right: 0;
             overflow: auto;

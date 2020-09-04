@@ -12,7 +12,7 @@
             <p class="id">User001</p>
             <p class="student-code">5912420009</p>
           </div>
-          <a href="/user/edit" class="btn btn-primary">แก้ไขโปรไฟล์</a>
+          <router-link :to="{name: 'edit-profile'}" class="btn btn-primary">แก้ไขโปรไฟล์</router-link>
         </div>
       </div>
       <div class="grid-item information">
